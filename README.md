@@ -1,16 +1,19 @@
-# flutter_native_splash_issue
+### DESCRIPTION
 
-A new Flutter project.
+Running application shows warning 
+```console
+WARNING: found an existing <meta name="viewport"> tag. Flutter Web uses its own viewport configuration for better compatibility with Flutter. This tag will be replaced.
+```
 
-## Getting Started
+### STEP TO REPRODUCE
 
-This project is a starting point for a Flutter application.
+- create app running `flutter create flutter_native_splash_issue`
+- add `flutter_native_splash` to the dependencies
+- add `splashscreen.yaml` file to the project
+- create splash screen running `flutter pub run flutter_native_splash:create --path=splashscreen.yaml`
+- run the app `flutter run -d chrome`
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
